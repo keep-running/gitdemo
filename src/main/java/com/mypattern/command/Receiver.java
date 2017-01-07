@@ -1,5 +1,10 @@
 package com.mypattern.command;
 
+/**
+ * ÃüÁî½ÓÊÜÕß
+ * @author li
+ *
+ */
 public class Receiver {
 	public Receiver() {
 		// TODO Auto-generated constructor stub
