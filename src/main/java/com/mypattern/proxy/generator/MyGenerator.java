@@ -20,7 +20,7 @@ public class MyGenerator {
 			
 			method.insertBefore("System.out.println(\"hello world !!!\");");
 			cc.addMethod(method);
-			String path = MyGenerator.class.getResource(".").getPath();
+//			String path = MyGenerator.class.getResource(".").getPath();
 			String path1 = MyGenerator.class.getResource("/").getPath();
 			cc.writeFile(path1);
 		} catch (CannotCompileException e) {

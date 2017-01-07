@@ -24,7 +24,7 @@ public class MainRun {
 
 	private static void newClass() {
 		try {
-			Class clz = Class.forName("com.test.generator.HelloBean");
+			Class<?> clz = Class.forName("com.test.generator.HelloBean");
 			Object object = clz.newInstance();
 			Method[] methods = object.getClass().getDeclaredMethods();
 			for (Method m : methods) {
@@ -33,7 +33,7 @@ public class MainRun {
 				for (Parameter p : ps) {
 					System.out.println(p.getName()+" , " + p.getType().getName());
 				}
-				m.invoke(object, ps);
+				/*Object invoke = */m.invoke(object, ps);
 			}
 //			System.out.println(object.getClass().getName());
 		} catch (ClassNotFoundException e) {
