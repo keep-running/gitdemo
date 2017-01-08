@@ -7,7 +7,7 @@ package com.mypattern.command;
  */
 public class Receiver {
 	public Receiver() {
-		// TODO Auto-generated constructor stub
+		// 测试新的提交
 	}
 
 	public void action() {
